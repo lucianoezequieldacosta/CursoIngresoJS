@@ -49,14 +49,21 @@ function Mostrar()
         }
      }
 
-
-
-
-
-
 	document.write(promedioNota);
 
+  
 }
+  /* 
+  1) Cantidad de mujeres aprobadas
+  2) cantidad de hombres mayores a 25 aprobados
+  3) cantidad de mujeres menores a 20 años
+  4) el nombre de la mujer con mejor nota
+  5) el nombre del hombre con mejor nota
+  6) promedio de notas de los hombres
+  7) promedio de nota de las mujeres
+  8) porcentajes de aprobados vs desaprobados
+  9) el sexo y el nombre de la primer persona que se saque 10
+
    
    /*
 	var contador=0;
