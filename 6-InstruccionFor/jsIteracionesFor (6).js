@@ -2,25 +2,22 @@ function Mostrar()
 {
 var numeroIngresado;
 var numerosPares;
-var contador;
+var contador = 0;
 var acumulador;
 
 numeroIngresado = prompt ("Ingrese numero")
 numeroIngresado = parseInt(numeroIngresado)
-
- if (numeroIngresado%2==0)
+for (i = 1; i <=numeroIngresado; i++)
+//for (i = numeroIngresado; i >1; i--)
+{
+  if (i%2==0)
  {
- 	alert("El número es par");
+ 	contador++;
+ 	alert(i);
+ 	console.log(i);
  }
-else
-  {
-   alert("El número es impar");
-  }
-   
- 
-
-
-
-
+  
+}
+alert("Total de pares: " + contador)
 
 }//FIN DE LA FUNCIÓN
