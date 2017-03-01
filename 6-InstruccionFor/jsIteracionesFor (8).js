@@ -1,8 +1,45 @@
 function Mostrar()
 {
-//al generar numeros random de 0 a 10 se debe contar la cantidad de cada uno de estas cifras, repetir la iteracion para lanzar el random cien mil veces.
-// e informar 1) la cantidad de veces que salio cada numero del 0 al 10
-// 2) el porcentaje de veces que salio cada numero con respecto al total 
-// 
 
-}//FIN DE LA FUNCIÓN
+var numeroIngresado;
+var numeroanterior;
+var tieneDivisor;
+var numeroRecorrido;
+
+numeroIngresado = prompt("Ingrese numero")
+numeroIngresado = parseInt(numeroIngresado)
+
+
+for (numRecorrido= numeroIngresado-1; numeroRecorrido>2; numeroRecorrido--)
+{	
+   tieneDivisor="no";
+   for (numeroanterior=2; numeroanterior<(numeroRecorrido/2); numeroanterior++)
+  {
+
+   if(numeroRecorrido % numeroanterior ==0)
+     
+    {
+    	tieneDivisor="si"
+    	break;
+    }
+  }
+
+ }
+
+  if (tieneDivisor=="no")
+    {
+        console.log("Es primo" + numeroRecorrido);
+    }
+
+
+
+}  //FIN DE LA FUNCIÓN
+
+/* 
+ FOR (numeroanterior=2, numeroanterior < numeroingresado, numeroanterior++)
+
+ IF (7 % 5 == 0) IF (numeroingresado % numeroanterior ==0)
+{
+	alert("Es divisor");
+	tieneDivisor="si" */
+
