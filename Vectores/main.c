@@ -1,33 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+
+// Se usa el \o para finalizar el mensaje (10 caracteres S E B A S T I A N A \o el o te desborda la funcion, tenes que cargar mas. Char nombre [10];)
+// Se calcula poner 20: Char nombre [20] 19 caracteres mas el \o
+// scanf("%c", &sexo[2]) (se usa c para caracter y dos para las opciones M o F)
+// Guardas la cadena que entra en el array: scanf("%s", nombre);
+// lo mostras por printf("%s", nombre);
+
+
 
 int main()
 {
-    int numeros [5];
+    char nombre [20];
+    char i;
+    printf("\Ingrese su nombre: ");
+    //scanf ("%s", nombre);
 
-    for (int i=0; i<5; i++)
-    {
-        printf("Ingrese un numero: ");
-        scanf("%d", &numeros[i] );
-    }
+    gets(nombre);
+    strlwr(nombre);
+    nombre [0] = toupper (nombre[0]);
 
-    printf("\n\n Los valores ingresados son: ");
+    for (i=0; i<20; i++)
 
-    for (int i = 0; i<5; i++)
-    {
-        printf("%d ", numeros[i]);
-    }
+       if (nombre[i] == ' ')
+       {
+          nombre [i+1] = toupper (nombre[i+1]);
+       }
 
-    printf("\n\n");
+    printf("\n Usted se llama %s\n", nombre);
 
-    printf("\n\n Los valores ingresados del ultimo al primero son: ");
-
-    for (int i=4; i>=0; i--)
-    {
-        printf("%d ", numeros[i]);
-    }
-
-
-
+    return 0;
 
 }
