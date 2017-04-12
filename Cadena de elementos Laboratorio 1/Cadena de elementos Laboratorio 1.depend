@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1492001473 source:/home/alumno/Escritorio/Cadena de elementos Laboratorio 1/main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
